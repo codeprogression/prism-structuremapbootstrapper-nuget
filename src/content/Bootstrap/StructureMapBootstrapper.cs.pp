@@ -16,7 +16,7 @@ using StructureMap.ServiceLocatorAdapter;
 
 namespace $rootnamespace$.Bootstrap
 {
-    public abstract class StructureMapBootstrapper : Bootstrapper
+    public abstract class StructureMapBootstrapper : Microsoft.Practices.Prism.Bootstrapper
     {
         private bool _useDefaultConfiguration = true;
 

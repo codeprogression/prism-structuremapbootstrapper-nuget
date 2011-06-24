@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>Prism.StructureMapBootstrapper</id>
+    <id>Prism.StructureMapExtensions</id>
     <version>1.0</version>
     <authors>Richard Cirerol</authors>
     <owners>Richard Cirerol</owners>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <projectUrl>https://github.com/codeprogression/prism-structuremapbootstrapper-nuget</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>StructureMap replacement for the Unity container in WPF Applications</description>
+    <description>Use these extensions to build Prism applications based on StructureMap</description>
     <tags>WPF Prism StructureMap</tags>
     <dependencies>
       <dependency id="structuremap"/>
       <dependency id="CommonServiceLocator"/>
-      <dependency id="CommonServiceLocator.StructureMap"/>
+      <dependency id="CommonServiceLocator.StructureMapAdapter"/>
       <dependency id="Prism"/>
     </dependencies>
   </metadata>
