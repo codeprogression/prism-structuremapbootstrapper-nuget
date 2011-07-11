@@ -12,18 +12,9 @@ namespace $rootnamespace$.Bootstrap
             Scan(s =>
                 {
                     s.AssembliesFromApplicationBaseDirectory();
-                    s.Convention<ModuleConvention>();
+                    s.AddAllTypesOf<IModule>();
                 });
             ForSingletonOf<IModuleManager>().Use<ModuleManager>();
         }
-    }
-    public class ModuleConvention : IRegistrationConvention
-    {
-        public void Process(Type type, StructureMap.Configuration.DSL.Registry registry)
-        {
-            if (type.GetInterfaces().Contains(typeof(IModule)))
-                registry.AddType(typeof(IModule), type);
-        }
-
     }
 }
